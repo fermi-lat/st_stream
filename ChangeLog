@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Nov  9 11:25:19 PST 2004
+st_stream/st_stream
+
+Modified Files:
+	StreamFormatter.h 
+Log Message:
+Tighten throw spec for StreamFormatter's destructor.
+
+    *
+------------------------------------------------------------
 User: peachey  Sat Oct 30 10:34:14 PDT 2004
 st_stream/src/test
 
