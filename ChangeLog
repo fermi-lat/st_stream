@@ -1,5 +1,21 @@
 ------------------------------------------------------------
 User: peachey  Fri Nov 26 09:15:46 PST 2004
+st_stream/src/test
+
+Modified Files:
+	test_st_stream.cxx 
+Log Message:
+Change OStream's templated operator<< to a new method write, and add
+explicit methods for shifting all primitive types. This is to facilitate
+defining operator<< for arbitrary classes.
+Add to OStream the methods precision, fill, width, setf, flags, which
+forward their arguments to the corresponding methods in the streams to
+which the OStream refers.
+Prevent an OStream from forwarding to itself.
+
+    *
+------------------------------------------------------------
+User: peachey  Fri Nov 26 09:15:46 PST 2004
 st_stream/src
 
 Modified Files:
