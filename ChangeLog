@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Wed Dec 29 12:14:17 PST 2004
+st_stream/st_stream
+
+Modified Files:
+	Stream.h 
+Log Message:
+Change OStream so that only the global maximum chatter is used. To retain
+needed flexibility, change OStream constructor so that OStreams can
+ignore chatter, and add an enable(bool) method to turn on/off.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Dec 29 11:19:49 PST 2004
 st_stream/data/outref
 
