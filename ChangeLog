@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Tue Nov  9 11:25:19 PST 2004
+st_stream/src
+
+Modified Files:
+	StreamFormatter.cxx 
+Log Message:
+Tighten throw spec for StreamFormatter's destructor.
+
+    *
+------------------------------------------------------------
+User: peachey  Tue Nov  9 11:25:19 PST 2004
 st_stream/st_stream
 
 Modified Files:
