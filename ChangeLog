@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed Dec 29 11:08:05 PST 2004
+st_stream/data
+
+Log Message:
+Directory /nfs/slac/g/glast/ground/cvs/st_stream/data added to the repository
+--> Using per-directory sticky tag `v0r1p0'
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r2p0, operation: add
 Package: st_stream
