@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Dec 29 12:18:14 PST 2004
+st_stream/data/outref
+
+Added Files:
+	test_st_stream-out 
+Log Message:
+Canonical output from test runs, for comparision when running tests.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Dec 29 12:17:04 PST 2004
 st_stream/src/test
 
