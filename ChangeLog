@@ -1,0 +1,26 @@
+------------------------------------------------------------
+User: peachey  Tue Oct 26 19:00:19 PDT 2004
+st_stream
+
+Log Message:
+New package for manipulating and formatting stream output.
+
+Status:
+
+Vendor Tag:	GLAST
+Release Tags:	v0
+		
+N st_stream/cmt/requirements
+N st_stream/src/Stream.cxx
+N st_stream/src/st_stream.cxx
+N st_stream/src/StreamFormatter.cxx
+N st_stream/src/mainpage.h
+N st_stream/src/test/test_st_stream.cxx
+N st_stream/st_stream/Stream.h
+N st_stream/st_stream/st_stream.h
+N st_stream/st_stream/StreamFormatter.h
+N st_stream/doc/release.notes
+
+No conflicts created by this import
+
+    *
