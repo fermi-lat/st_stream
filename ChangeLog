@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Sat Oct 30 10:34:14 PDT 2004
+st_stream/src/test
+
+Modified Files:
+	test_st_stream.cxx 
+Log Message:
+Add limits.h.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Oct 26 19:00:19 PDT 2004
 st_stream
 
