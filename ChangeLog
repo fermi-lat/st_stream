@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Wed Dec 29 12:16:12 PST 2004
+st_stream/src
+
+Modified Files:
+	StreamFormatter.cxx 
+Log Message:
+Use newest OStream constructor. Instead of connecting the debug stream
+only if debugging is enabled, connect the debug stream but leave it
+disabled. That way the state of debug stream can be changed at runtime.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Dec 29 12:14:17 PST 2004
 st_stream/src
 
