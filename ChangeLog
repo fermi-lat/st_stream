@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Dec 29 12:17:04 PST 2004
+st_stream/src/test
+
+Modified Files:
+	test_st_stream.cxx 
+Log Message:
+Improve messages, and synchronize test with latest StreamFormatter behavior.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Dec 29 12:16:12 PST 2004
 st_stream/src
 
