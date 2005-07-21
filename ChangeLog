@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Thu Jul 21 10:40:59 PDT 2005
+st_stream/src/test
+
+Modified Files:
+	test_st_stream.cxx 
+Log Message:
+Test prefix() method and prefix stream manipulator for writing prefix
+at beginning of lines.
+
+    *
+------------------------------------------------------------
 User: peachey  Thu Jul 21 10:40:30 PDT 2005
 st_stream/src
 
