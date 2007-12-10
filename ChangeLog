@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Mon Dec 10 13:41:14 PST 2007
+st_stream
+
+Added Files:
+	SConscript st_streamLib.py 
+Log Message:
+Initial import of SCons files
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r5, operation: add
 Package: st_stream
