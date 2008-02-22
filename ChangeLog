@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Thu Feb 21 16:53:50 PST 2008
+st_stream
+
+Modified Files:
+	SConscript st_streamLib.py 
+Log Message:
+Add st_stream as a dependency, cosmetic changes
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r5p1, operation: mov
 Package: st_stream
