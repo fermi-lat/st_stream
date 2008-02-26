@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Tue Feb 26 08:23:28 PST 2008
+ScienceTools-scons/st_stream
+
+Modified Files:
+	SConscript st_streamLib.py 
+Log Message:
+Add lib dependencies when creating a library
+    *
+------------------------------------------------------------
 TAG
 Tag name: st_stream-00-05-01, operation: mov
 Package: st_stream
