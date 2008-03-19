@@ -1,4 +1,4 @@
-#$Id: SConscript,v 1.4 2008/02/22 00:53:50 golpa Exp $
+#$Id: SConscript,v 1.5 2008/02/26 16:23:28 glastrm Exp $
 
 Import('baseEnv')
 Import('listFiles')
@@ -11,4 +11,5 @@ st_streamLib = libEnv.StaticLibrary('st_stream', listFiles(['src/*.cxx']))
 progEnv.Tool('st_streamLib')
 test_st_streamBin = progEnv.Program('test_st_stream', listFiles(['src/test/*.cxx']))
 
-progEnv.Tool('registerObjects', package = 'st_stream', libraries = [st_streamLib], includes = listFiles(['st_stream/*.h']), testApps = [test_st_streamBin])
+progEnv.Tool('registerObjects', package = 'st_stream', libraries = [st_streamLib], includes = listFiles(['st_stream/*.h']), testApps = [test_st_streamBin],
+             data = listFiles(['data/*'], recursive = True))
