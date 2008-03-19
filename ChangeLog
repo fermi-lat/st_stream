@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 TAG
+Tag name: st_stream-00-05-01, operation: mov
+Package: st_stream
+User: glast  Wed Mar 19 13:41:06 2008
+Files:
+  st_stream/SConscript  1.6
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: v0r5p1, operation: mov
 Package: st_stream
 User: glast  Wed Mar 19 13:40:53 2008
