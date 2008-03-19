@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Wed Mar 19 13:40:12 PDT 2008
+ScienceTools-scons/st_stream
+
+Modified Files:
+	SConscript 
+Log Message:
+Register data files
+    *
+------------------------------------------------------------
 TAG
 Tag name: st_stream-00-05-01, operation: mov
 Package: st_stream
