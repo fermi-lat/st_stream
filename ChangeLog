@@ -1,4 +1,26 @@
 ------------------------------------------------------------
+TAG
+Tag name: v0r5p2, operation: add
+Package: st_stream
+User: peachey  Thu Apr 10 08:51:03 2008
+Files:
+  st_stream/st_streamLib.py  1.3
+  st_stream/ChangeLog  1.52
+  st_stream/SConscript  1.6
+  st_stream/cmt/requirements  1.1.1.1
+  st_stream/data/outref/test_st_stream-out  1.1
+  st_stream/doc/release.notes  1.8
+  st_stream/src/mainpage.h  1.1.1.1
+  st_stream/src/Stream.cxx  1.4
+  st_stream/src/st_stream.cxx  1.3
+  st_stream/src/StreamFormatter.cxx  1.4
+  st_stream/src/test/test_st_stream.cxx  1.6
+  st_stream/st_stream/st_stream.h  1.2
+  st_stream/st_stream/Stream.h  1.4
+  st_stream/st_stream/StreamFormatter.h  1.2
+
+    *
+------------------------------------------------------------
 User: peachey  Thu Apr 10 08:50:46 PDT 2008
 st_stream/doc
 
