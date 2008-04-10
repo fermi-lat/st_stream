@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Thu Apr 10 08:48:54 PDT 2008
+st_stream/src
+
+Modified Files:
+	st_stream.cxx 
+Log Message:
+Only use static variables within function scope to prevent
+instability resulting from the indeterminate order of symbol definition
+within different translation units.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: st_stream-00-05-01, operation: mov
 Package: st_stream
