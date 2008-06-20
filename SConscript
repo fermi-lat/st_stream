@@ -1,4 +1,7 @@
-#$Id: SConscript,v 1.5 2008/02/26 16:23:28 glastrm Exp $
+# -*- python -*-
+# $Id: SConscript,v 1.6 2008/03/19 20:40:12 glastrm Exp $
+# Authors: James Peachey peachey@lheamail.gsfc.nasa.gov
+# Version: st_stream-00-05-02
 
 Import('baseEnv')
 Import('listFiles')
