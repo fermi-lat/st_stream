@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+TAG
+Tag name: st_stream-00-05-02, operation: mov
+Package: st_stream
+User: glastrm  Thu Jun 19 17:00:36 2008
+Files:
+  st_stream/SConscript  1.7
+
+    *
+------------------------------------------------------------
 User: glastrm  Thu Jun 19 17:00:16 PDT 2008
 st_stream
 
