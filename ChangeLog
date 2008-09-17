@@ -1,5 +1,13 @@
 ------------------------------------------------------------
 TAG
+Tag name: ScienceTools-09-07-00, operation: del
+Package: st_stream
+User: glastrm  Wed Sep 17 13:12:27 2008
+Files:
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: ScienceTools-09-07-00, operation: add
 Package: st_stream
 User: glastrm  Sat Jul 26 20:53:42 2008
