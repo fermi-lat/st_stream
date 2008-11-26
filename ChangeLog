@@ -1,4 +1,12 @@
 ------------------------------------------------------------
+User: glastrm  Wed Nov 26 06:30:37 PST 2008
+st_stream
+
+Modified Files:
+	SConscript 
+Log Message:
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r6, operation: add
 Package: st_stream
