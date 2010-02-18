@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Id: SConscript,v 1.9 2009/07/10 01:07:38 jrb Exp $
+# $Id: SConscript,v 1.10 2009/07/15 18:33:54 glastrm Exp $
 # Authors: James Peachey peachey@lheamail.gsfc.nasa.gov
 # Version: st_stream-00-06-01
 
@@ -8,7 +8,6 @@ Import('listFiles')
 progEnv = baseEnv.Clone()
 libEnv = baseEnv.Clone()
 
-libEnv.Tool('st_streamLib', depsOnly = 1)
 st_streamLib = libEnv.StaticLibrary('st_stream', listFiles(['src/*.cxx']))
 
 progEnv.Tool('st_streamLib')
