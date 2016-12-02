@@ -1,5 +1,28 @@
 ------------------------------------------------------------
 TAG
+Tag name: ScienceTools-11-05-01, operation: add
+Package: st_stream
+User: glastrm  Thu Dec  1 20:02:31 2016
+Files:
+  st_stream/.cvsignore  1.1
+  st_stream/st_streamLib.py  1.3
+  st_stream/ChangeLog  1.104
+  st_stream/SConscript  1.12
+  st_stream/cmt/requirements  1.1.1.1
+  st_stream/data/outref/test_st_stream-out  1.1
+  st_stream/doc/release.notes  1.12
+  st_stream/src/mainpage.h  1.1.1.1
+  st_stream/src/Stream.cxx  1.4
+  st_stream/src/st_stream.cxx  1.3
+  st_stream/src/StreamFormatter.cxx  1.4
+  st_stream/src/test/test_st_stream.cxx  1.6
+  st_stream/st_stream/st_stream.h  1.2
+  st_stream/st_stream/Stream.h  1.5
+  st_stream/st_stream/StreamFormatter.h  1.2
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: ScienceTools-11-05-00, operation: add
 Package: st_stream
 User: glastrm  Fri Nov  4 08:53:23 2016
