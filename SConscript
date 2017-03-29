@@ -1,6 +1,6 @@
 # -*- python -*-
-# $Id: SConscript,v 1.11 2010/02/18 01:03:04 jrb Exp $
-# Authors: James Peachey peachey@lheamail.gsfc.nasa.gov
+# $Id: SConscript,v 1.12 2010/02/22 23:10:20 jrb Exp $
+# Authors: James Peachey peachey@lheamail.gsfc.nasa.gov, Joe Asercion <joseph.a.asercion@nasa.gov>
 # Version: st_stream-00-06-02
 
 Import('baseEnv')
