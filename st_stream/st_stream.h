@@ -6,6 +6,7 @@
 #define st_stream_st_stream_h
 
 #include <string>
+#include <iostream>
 
 #include "st_stream/Stream.h"
 
