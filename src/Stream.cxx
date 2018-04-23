@@ -2,7 +2,7 @@
     \brief Implementation of OStream class.
     \author James Peachey, HEASARC/GSSC
 */
-//#include <ostream>
+#include <ios>
 #include "st_stream/Stream.h"
 #include "st_stream/st_stream.h"
 
