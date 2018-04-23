@@ -2,8 +2,7 @@
     \brief Implementation of OStream class.
     \author James Peachey, HEASARC/GSSC
 */
-//#include <iostream>
-//#include <iomanip>
+#include <ostream>
 #include "st_stream/Stream.h"
 #include "st_stream/st_stream.h"
 
@@ -107,11 +106,11 @@ namespace st_stream {
   }
 
   char OStream::fill() const {
-    return getStreamState<char, std::basic_ios<char> >(&std::basic_ios::fill, &OStream::fill);
+    return getStreamState<char, std::basic_ios<char> >(&std::ostream::fill, &OStream::fill);
   }
 
   char OStream::fill(char new_fill) {
-    return setStreamState<char, std::basic_ios<char> >(&std::basic_ios::fill, &OStream::fill, &OStream::fill, new_fill);
+    return setStreamState<char, std::basic_ios<char> >(&std::ostream::fill, &OStream::fill, &OStream::fill, new_fill);
   }
 
   OStream & prefix(OStream & os) { return os.prefix(); }
