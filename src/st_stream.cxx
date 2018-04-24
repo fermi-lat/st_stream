@@ -5,6 +5,7 @@
 #include <limits>
 #include "st_stream/st_stream.h"
 #include <iostream>
+#include <ios>
 
 namespace {
 
