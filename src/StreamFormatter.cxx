@@ -3,6 +3,7 @@
     \author James Peachey, HEASARC/GSSC
 */
 #include <iostream>
+#include <ios>
 
 #include "st_stream/StreamFormatter.h"
 #include "st_stream/st_stream.h"
