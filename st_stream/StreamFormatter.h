@@ -6,6 +6,7 @@
 #define st_stream_StreamFormatter_h
 
 #include <string>
+#include <ios>
 
 #include "st_stream/Stream.h"
 
