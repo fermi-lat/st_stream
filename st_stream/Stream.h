@@ -6,6 +6,7 @@
 #define st_stream_Stream_h
 
 #include <ios>
+#include <iostream>
 #include <set>
 #include <string>
 
