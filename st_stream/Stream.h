@@ -5,6 +5,7 @@
 #ifndef st_stream_Stream_h
 #define st_stream_Stream_h
 
+#include <ios>
 #include <set>
 #include <string>
 
