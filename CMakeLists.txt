@@ -10,7 +10,7 @@ add_library(st_stream STATIC
   src/StreamFormatter.cxx
   src/st_stream.cxx
 )
-add_library(ST::st_stream ALIAS st_stream)
+add_library(ST::stream ALIAS st_stream)
 
 target_include_directories(st_stream
   PUBLIC
