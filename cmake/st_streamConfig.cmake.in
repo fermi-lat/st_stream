@@ -1,0 +1,9 @@
+get_filename_component(st_stream_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+include(CMakeFindDependencyMacro)
+
+if(NOT TARGET ST::st_stream)
+    include("${st_stream_CMAKE_DIR}/st_streamTargets.cmake")
+endif()
+
+set(st_stream_LIBRARIES ST::st_stream)
+
