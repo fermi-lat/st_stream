@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1)
-
+set (CMAKE_CXX_STANDARD 11)
 project(ST_Stream
   VERSION 0.0.0
   LANGUAGES CXX
@@ -19,7 +19,7 @@ target_include_directories(st_stream
 )
 
 add_executable(test_st_stream src/test/test_st_stream)
-target_link_library(test_st_stream PRIVATE ST::stream)
+target_link_libraries(test_st_stream PRIVATE ST::stream)
 
 include(GNUInstallDirs)
 set(INSTALL_CONFIGDIR ${CMAKE_INSTALL_LIBDIR}/cmake/st_stream)
