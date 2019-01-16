@@ -18,6 +18,9 @@ target_include_directories(st_stream
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
 )
 
+add_executable(test_st_stream src/test/test_st_stream)
+target_link_library(test_st_stream PRIVATE ST::stream)
+
 include(GNUInstallDirs)
 set(INSTALL_CONFIGDIR ${CMAKE_INSTALL_LIBDIR}/cmake/st_stream)
 
