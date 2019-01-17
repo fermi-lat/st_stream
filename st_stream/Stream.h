@@ -318,7 +318,7 @@ namespace st_stream {
 
   template <typename T, typename Stream_t>
   inline T OStream::getStreamState(T (Stream_t::*stdMethod)() const, T (OStream::*method)() const) const {
-    T orig;
+    T orig = T();
     // First try getting the information from the first std::stream object which is referred to by this stream.
     if (!m_std_stream_cont.empty()) orig = ((*m_std_stream_cont.begin())->*stdMethod)();
     // First try getting the information from the first OStream object which is referred to by this stream.
