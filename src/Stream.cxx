@@ -105,11 +105,32 @@ namespace st_stream {
   }
 
   char OStream::fill() const {
-    return getStreamState<char, std::basic_ios<char> >(&std::ostream::fill, &OStream::fill);
+    char orig = char();
+
+    if ( !m_std_stream_cont.empty() )
+      orig = ( *m_std_stream_cont.begin() )->fill();
+
+    else if ( !m_stream_cont.empty() )
+      orig = ( *m_stream_cont.begin() )->fill();
+
+    return orig;
   }
 
-  char OStream::fill(char new_fill) {
-    return setStreamState<char, std::basic_ios<char> >(&std::ostream::fill, &OStream::fill, &OStream::fill, new_fill);
+  char OStream::fill( char new_fill ) {
+
+    // Return value is the current value of this particular stream property.
+    char orig = this->fill();
+
+    // Only modify destination streams if message chatter is less than or equal
+    // to maximum user/client chatter.
+    if ( m_enabled ) {
+      for ( auto& strm : m_std_stream_cont )
+        strm->fill( new_fill );
+      for ( auto& strm : m_stream_cont )
+        strm->fill( new_fill );
+  }
+
+    return orig;
   }
 
   OStream & prefix(OStream & os) { return os.prefix(); }
