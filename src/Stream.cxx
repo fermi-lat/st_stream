@@ -124,10 +124,10 @@ namespace st_stream {
     // Only modify destination streams if message chatter is less than or equal
     // to maximum user/client chatter.
     if ( m_enabled ) {
-      for ( auto& strm : m_std_stream_cont )
-        strm->fill( new_fill );
-      for ( auto& strm : m_stream_cont )
-        strm->fill( new_fill );
+      //for ( auto& strm : m_std_stream_cont )
+      //  strm->fill( new_fill );
+      //for ( auto& strm : m_stream_cont )
+      //  strm->fill( new_fill );
   }
 
     return orig;
