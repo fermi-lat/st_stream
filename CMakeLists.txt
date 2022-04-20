@@ -13,3 +13,18 @@ target_include_directories(
 
 add_executable(test_st_stream src/test/test_st_stream.cxx)
 target_link_libraries(test_st_stream PRIVATE st_stream)
+
+###############################################################
+# Installation
+###############################################################
+install(DIRECTORY st_stream DESTINATION ${FERMI_INSTALL_INCLUDEDIR})
+install(DIRECTORY data/ DESTINATION ${FERMI_INSTALL_DATADIR})
+
+install(
+  TARGETS st_stream
+  # EXPORT fermiTargets
+  RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+  LIBRARY DESTINATION lib
+  ARCHIVE DESTINATION lib
+  INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+)
