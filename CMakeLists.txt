@@ -18,7 +18,7 @@ target_link_libraries(test_st_stream PRIVATE st_stream)
 # Installation
 ###############################################################
 install(DIRECTORY st_stream DESTINATION ${FERMI_INSTALL_INCLUDEDIR})
-install(DIRECTORY data/ DESTINATION ${FERMI_INSTALL_DATADIR})
+install(DIRECTORY data/ DESTINATION ${FERMI_INSTALL_DATADIR}/st_stream)
 
 install(
   TARGETS st_stream test_st_stream
