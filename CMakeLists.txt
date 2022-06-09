@@ -1,5 +1,5 @@
 add_library(
-  st_stream STATIC
+  st_stream 
   src/st_stream.cxx
   src/Stream.cxx
   src/StreamFormatter.cxx
