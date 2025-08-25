@@ -11,6 +11,8 @@ target_include_directories(
   $<INSTALL_INTERFACE:>
 )
 
+set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
+
 add_executable(test_st_stream src/test/test_st_stream.cxx)
 target_link_libraries(test_st_stream PRIVATE st_stream)
 
