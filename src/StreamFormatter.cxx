@@ -31,33 +31,33 @@ namespace st_stream {
     setPrefix();
   }
 
-  OStream & StreamFormatter::debug() {
+  auto StreamFormatter::debug() -> OStream & {
     return m_debug_stream;
   }
 
-  OStream & StreamFormatter::err() {
+  auto StreamFormatter::err() -> OStream & {
     // Error stream ignores chatter.
     return m_err_stream;
   }
 
-  OStream & StreamFormatter::info() {
+  auto StreamFormatter::info() -> OStream & {
     return m_info_stream.setChatLevel(m_default_chat_level);
   }
 
-  OStream & StreamFormatter::info(unsigned int chat_level) {
+  auto StreamFormatter::info(unsigned int chat_level) -> OStream & {
     return m_info_stream.setChatLevel(chat_level);
   }
 
-  OStream & StreamFormatter::out() {
+  auto StreamFormatter::out() -> OStream & {
     // Output stream ignores chatter.
     return m_out_stream;
   }
 
-  OStream & StreamFormatter::warn() {
+  auto StreamFormatter::warn() -> OStream & {
     return m_warn_stream.setChatLevel(m_default_chat_level);
   }
 
-  OStream & StreamFormatter::warn(unsigned int chat_level) {
+  auto StreamFormatter::warn(unsigned int chat_level) -> OStream & {
     return m_warn_stream.setChatLevel(chat_level);
   }
 
@@ -84,8 +84,8 @@ namespace st_stream {
     m_warn_stream.setPrefix(createPrefix(exec_name, m_class_name, m_method_name, "WARNING"));
   }
 
-  std::string StreamFormatter::createPrefix(const std::string & exec_name, const std::string & class_name,
-    const std::string & method_name, const std::string & message_type) {
+  auto StreamFormatter::createPrefix(const std::string & exec_name, const std::string & class_name,
+    const std::string & method_name, const std::string & message_type) -> std::string {
     // Start with the name of the executable.
     std::string prefix = exec_name;
     if (!exec_name.empty()) prefix += ": ";

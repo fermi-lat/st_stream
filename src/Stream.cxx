@@ -23,15 +23,15 @@ namespace st_stream {
   OStream::OStream(bool use_chatter): m_std_stream_cont(), m_stream_cont(), m_prefix(), m_chat_level(0),
     m_enabled(true), m_use_chatter(use_chatter) { setChatLevel(m_chat_level); }
 
-  OStream & OStream::prefix() { return *this << m_prefix; }
+  auto OStream::prefix() -> OStream & { return *this << m_prefix; }
 
-  OStream & OStream::setChatLevel(unsigned int chat_level) {
+  auto OStream::setChatLevel(unsigned int chat_level) -> OStream & {
     m_chat_level = chat_level;
     if (m_use_chatter) enable(m_chat_level <= GetMaximumChatter());
     return *this;
   }
 
-  const std::string & OStream::getPrefix() const { return m_prefix; }
+  auto OStream::getPrefix() const -> const std::string & { return m_prefix; }
 
   void OStream::setPrefix(const std::string prefix) { m_prefix = prefix; }
 
@@ -43,20 +43,20 @@ namespace st_stream {
 
   void OStream::disconnect(OStream & dest) { m_stream_cont.erase(&dest); }
 
-  std::ios_base::fmtflags OStream::flags() const {
+  auto OStream::flags() const -> std::ios_base::fmtflags {
     return getStreamState<std::ios_base::fmtflags, std::ios_base>(&std::ostream::flags, &OStream::flags);
   }
 
-  std::ios_base::fmtflags OStream::flags(std::ios_base::fmtflags fmtfl) {
+  auto OStream::flags(std::ios_base::fmtflags fmtfl) -> std::ios_base::fmtflags {
     return setStreamState<std::ios_base::fmtflags, std::ios_base>(&std::ostream::flags, &OStream::flags, &OStream::flags, fmtfl);
   }
 
-  std::ios_base::fmtflags OStream::setf(std::ios_base::fmtflags fmtfl) {
+  auto OStream::setf(std::ios_base::fmtflags fmtfl) -> std::ios_base::fmtflags {
     return setStreamState<std::ios_base::fmtflags, std::ios_base>(&std::ostream::setf, &OStream::setf, &OStream::flags, fmtfl);
   }
 
   // Note that the following method has an unusal signature and thus can't use setStreamState.
-  std::ios_base::fmtflags OStream::setf(std::ios_base::fmtflags fmtfl, std::ios_base::fmtflags mask) {
+  auto OStream::setf(std::ios_base::fmtflags fmtfl, std::ios_base::fmtflags mask) -> std::ios_base::fmtflags {
     std::ios_base::fmtflags orig_flags = flags();
 
     // Only modify destination streams if message chatter is less than or equal to maximum user/client chatter.
@@ -87,24 +87,24 @@ namespace st_stream {
     }
   }
 
-  std::streamsize OStream::precision() const {
+  auto OStream::precision() const -> std::streamsize {
     return getStreamState<std::streamsize, std::ios_base>(&std::ostream::precision, &OStream::precision);
   }
 
-  std::streamsize OStream::precision(std::streamsize new_precision) {
+  auto OStream::precision(std::streamsize new_precision) -> std::streamsize {
     return setStreamState<std::streamsize, std::ios_base>(&std::ostream::precision, &OStream::precision,
       &OStream::precision, new_precision);
   }
 
-  std::streamsize OStream::width() const {
+  auto OStream::width() const -> std::streamsize {
     return getStreamState<std::streamsize, std::ios_base>(&std::ostream::width, &OStream::width);
   }
 
-  std::streamsize OStream::width(std::streamsize new_width) {
+  auto OStream::width(std::streamsize new_width) -> std::streamsize {
     return setStreamState<std::streamsize, std::ios_base>(&std::ostream::width, &OStream::width, &OStream::width, new_width);
   }
 
-  char OStream::fill() const {
+  auto OStream::fill() const -> char {
     char orig = char();
 
     if ( !m_std_stream_cont.empty() )
@@ -116,7 +116,7 @@ namespace st_stream {
     return orig;
   }
 
-  char OStream::fill( char new_fill ) {
+  auto OStream::fill( char new_fill ) -> char {
 
     // Return value is the current value of this particular stream property.
     char orig = this->fill();
@@ -133,5 +133,5 @@ namespace st_stream {
     return orig;
   }
 
-  OStream & prefix(OStream & os) { return os.prefix(); }
+  auto prefix(OStream & os) -> OStream & { return os.prefix(); }
 }

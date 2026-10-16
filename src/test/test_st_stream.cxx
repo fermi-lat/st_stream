@@ -14,7 +14,7 @@
 using namespace st_stream;
 
 // Single global formatter for sample1.
-StreamFormatter & formatter1() {
+auto formatter1() -> StreamFormatter & {
   // This cannot simply be instantiated at global scope because the maximum chatter, name of executable, etc.
   // are initialized after execution commences.
   static StreamFormatter s_format("", "", 3);
@@ -179,7 +179,7 @@ void sample4() {
   b.write();
 }
 
-int main() {
+auto main() -> int {
   // Before initializing standard streams, write to stout. This should have no effect.
   stout << prefix << "This was written before initializing standard streams, so THIS SHOULD NOT APPEAR on any stream!" << std::endl;
 

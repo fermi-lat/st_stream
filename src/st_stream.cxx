@@ -7,19 +7,19 @@
 
 namespace {
 
-  bool & GetNonConstDebugMode() {
+  auto GetNonConstDebugMode() -> bool & {
     // Global debug mode flag.
     static bool s_debug_mode = false;
     return s_debug_mode;
   }
 
-  std::string & GetNonConstExecName() {
+  auto GetNonConstExecName() -> std::string & {
     // Name of the current executable.
     static std::string s_exec_name;
     return s_exec_name;
   }
 
-  unsigned int & GetNonConstMaxChat() {
+  auto GetNonConstMaxChat() -> unsigned int & {
     // Global chatter maximum.
     static unsigned int s_global_max_chat = std::numeric_limits<unsigned int>::max();
     return s_global_max_chat;
@@ -45,15 +45,15 @@ namespace st_stream {
     }
   }
 
-  bool GetDebugMode() {
+  auto GetDebugMode() -> bool {
     return GetNonConstDebugMode();
   }
 
-  const std::string & GetExecName() {
+  auto GetExecName() -> const std::string & {
     return GetNonConstExecName();
   }
 
-  unsigned int GetMaximumChatter() {
+  auto GetMaximumChatter() -> unsigned int {
     return GetNonConstMaxChat();
   }
 
