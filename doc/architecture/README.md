@@ -200,6 +200,11 @@ None. `test_st_stream` is the only executable.
 No bindings of its own. `pyLikelihood` exposes
 `LogLike.initOutputStreams(maxChatter=2)`.
 
+### Environment variables
+
+None (no `getenv`). Variables set by conda activation are described under
+"Runtime environment" in ScienceTools' `docs/architecture/README.md`.
+
 ### File formats
 
 None.
@@ -221,10 +226,17 @@ None.
     and cerr. It then redirects the global streams to a file named
     `test_st_stream-out` in the **current directory** and exercises
     chatter, prefixes, debug mode, precision, flags, width and fill.
-  - It always returns 0 unless the output file cannot be opened. Checking
-    is **by eye**: lines marked "THIS SHOULD NOT APPEAR" must be absent.
-    `data/outref/test_st_stream-out` is the reference copy of the file,
-    but nothing in the repo compares against it.
+  - It always returns 0 unless the output file cannot be opened. Lines
+    marked "THIS SHOULD NOT APPEAR" must be absent from the output.
+  - The default run of the project harness `recipe/tests/ST-unit-test`
+    (see "Testing" in ScienceTools' `docs/architecture/README.md`) runs
+    `test_st_stream`, then `check_test_st_stream_output` compares
+    `test_st_stream-out` with plain `diff` against
+    `share/fermitools/data/st_stream/outref/test_st_stream-out`. That
+    reference is this package's own `data/outref/test_st_stream-out`,
+    installed by the `install(DIRECTORY data/ ...)` rule above; there is no
+    `st_stream` directory in `fermitools-data`'s `outrefFiles/`. Nothing
+    inside this repo runs the comparison.
 - **Legacy:** `SConscript` and `st_streamLib.py` belong to the old SCons
   build.
 
