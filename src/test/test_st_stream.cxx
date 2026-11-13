@@ -138,7 +138,7 @@ void sample4() {
       }
 
     private:
-      double m_stat;
+      double m_stat{5.};
   };
 
   // Second, a class which produces equivalent output using st_stream's stream formatting capabilities:
@@ -169,7 +169,7 @@ void sample4() {
 
     private:
       st_stream::StreamFormatter m_os;
-      double m_stat;
+      double m_stat{5.};
   };
 
   A a;

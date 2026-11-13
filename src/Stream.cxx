@@ -62,11 +62,11 @@ namespace st_stream {
     // Only modify destination streams if message chatter is less than or equal to maximum user/client chatter.
     if (m_enabled) {
       // Call setf for all std::ostream objects.
-      for (StdStreamCont_t::iterator itor = m_std_stream_cont.begin(); itor != m_std_stream_cont.end(); ++itor)
+      for (auto itor = m_std_stream_cont.begin(); itor != m_std_stream_cont.end(); ++itor)
         (*itor)->setf(fmtfl, mask);
 
       // Call setf for all OStream objects.
-      for (OStreamCont_t::iterator itor = m_stream_cont.begin(); itor != m_stream_cont.end(); ++itor)
+      for (auto itor = m_stream_cont.begin(); itor != m_stream_cont.end(); ++itor)
         (*itor)->setf(fmtfl, mask);
     }
 
@@ -78,11 +78,11 @@ namespace st_stream {
     // Only modify destination streams if message chatter is less than or equal to maximum user/client chatter.
     if (m_enabled) {
       // Call unsetf for all std::ostream objects.
-      for (StdStreamCont_t::iterator itor = m_std_stream_cont.begin(); itor != m_std_stream_cont.end(); ++itor)
+      for (auto itor = m_std_stream_cont.begin(); itor != m_std_stream_cont.end(); ++itor)
         (*itor)->unsetf(mask);
 
       // Call unsetf for all OStream objects.
-      for (OStreamCont_t::iterator itor = m_stream_cont.begin(); itor != m_stream_cont.end(); ++itor)
+      for (auto itor = m_stream_cont.begin(); itor != m_stream_cont.end(); ++itor)
         (*itor)->unsetf(mask);
     }
   }

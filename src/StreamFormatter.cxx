@@ -24,7 +24,7 @@ namespace st_stream {
     setDebugMode(GetDebugMode());
   }
 
-  StreamFormatter::~StreamFormatter() throw() {}
+  StreamFormatter::~StreamFormatter() throw() = default;
 
   void StreamFormatter::setMethod(const std::string & method_name) {
     m_method_name = method_name;
